@@ -24,5 +24,7 @@ app.post('/', async (req, res) => {
   await fs.appendFile(logsPath, `${text}\r\n`)
   res.redirect('/')
 })
+console.log('Hello world')
 
 app.listen(port, () => console.log(`Server listening on port ${port}`))
+
